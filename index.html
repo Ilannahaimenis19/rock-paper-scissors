@@ -21,6 +21,25 @@
 
     console.log(getComputerChoice())
 
+    function getHumanChoice() {
+        let humanChoice = prompt("Input Rock, Paper or Scissors").toLowerCase() // pegar input do usuário
+        
+        switch (humanChoice) {
+            case "rock":
+                return "rock";
+            case "paper":
+                return "paper";
+            case "scissors":
+                return "scissors";
+        }
+            // retornar os valores rock, paper and scissors dependendo do que o usuário escrever.
+    }
+
+    console.log(getHumanChoice());
+
+    let humanScore = 0;
+    let computerScore = 0;
+    
     </script>
 </body>
 </html>
